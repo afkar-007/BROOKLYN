@@ -313,7 +313,7 @@ margin-top: 1rem;
 
 
 
-@media (max-width: 395px){
+@media (max-width: 390px){
 .login-logo {
   left: 1.6rem;
   top: 1.3rem;
@@ -328,13 +328,13 @@ margin-top: 1rem;
 
 }
 .dark-premium-input{
-  margin-left: 3rem;
+  margin-left: 4rem;
   
   margin-top: 4rem;
   width: 13rem;
   
 }.dark-premium-input2{
-  margin-left: 3rem;
+  margin-left: 4rem;
   margin-top: 2rem;
   width: 13rem;
   
@@ -343,7 +343,7 @@ margin-top: 1rem;
 
   width: 10rem;
  margin-top: 1rem;
- margin-left: 5.5rem;
+ margin-left: 6.5rem;
 }
 
 }
