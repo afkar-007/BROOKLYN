@@ -17,6 +17,7 @@
   color: #111111;
   line-height: 1.1;
   margin-top: 2rem;
+ 
 
 background: linear-gradient(
     135deg, 
@@ -89,7 +90,7 @@ body, html {
 .login-logo {
   width: 70px;   
         /* Adjust the size to fit your design */
-        left: 30rem;
+        left:28rem;
   height: auto;
   margin-bottom: 1.5rem;
   display: flex;
@@ -99,17 +100,34 @@ body, html {
   filter: drop-shadow(0 0 15px rgba(197, 168, 128, 0.2));
 }
 
-@media (max-width: 550px){
+@media (max-width: 560px){
  
 .login-logo {
-  left: 0.5rem;
-  width: 60px;
-  height: 60px;
+  left: 3rem;
+  width: 40px;
+  height: 40px;
 }
 .app-heading-premium {
-  margin-left: 1.2rem;
-  font-size: 3.6rem;
+  margin-left: 1rem;
+  font-size: 2.5rem;
   margin-top: 3rem;
 
 }
 }
+@media (max-width: 374px){
+.login-logo {
+  left: 1.6rem;
+  width: 40px;
+  height: 40px;
+}
+.app-heading-premium {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+
+}
+}
+
+
+
+
