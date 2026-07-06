@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(212,175,55,0.18), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(255,215,120,0.08), transparent 40%),
+    linear-gradient(135deg, #050505, #111111, #1a1a1a);
+  color: white;
+}
+.button{
+    padding:14px 35px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,#D4AF37,#FFD700,#B8860B);
+    color:#111;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(212,175,55,.35);
+    margin-left: 4rem;
+}
+.button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(212,175,55,.5);
+}
+.card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(212,175,55,.2);
+    border-radius:20px;
+    padding:25px;
+    backdrop-filter:blur(10px);
+    transition:.4s;
+    margin-bottom: 1rem;
+    width: 20rem;
+    margin-left: 40rem;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#D4AF37;
+    box-shadow:0 15px 40px rgba(212,175,55,.2);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ff4d4d, #d90429);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 2.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(217, 4, 41, 0.3);
+  margin-left: 2rem;
+}
+
+.delete-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(217, 4, 41, 0.45);
+}
+
+.delete-btn:active {
+  transform: scale(0.96);
+}
+
+.title{
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #D4AF37;
+}
+
+.content{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #d6d6d6;
+}
+
+
+
+
+@media (max-width: 400px){
+    .card{
+        margin-left: 2rem;
+        width: 15rem;
+        margin-top: 1rem;
+       
+    }
+    .button{
+        width: 6rem;
+        margin-left: 2rem;
+        
+    }
+    .delete-btn{
+        margin-bottom:1rem ;
+        width: 6rem;
+        margin-left: 0rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

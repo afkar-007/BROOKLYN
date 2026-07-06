@@ -1,10 +1,4 @@
-/* ======Login  started====== */
-
-
-
-
-/* ======Login finished======== */
-
+/* ======Login body started====== */
 .Login-Body{
   margin: 0;
   padding: 0;
@@ -13,8 +7,6 @@
   min-height: 100vh; 
   
   /* Forces the layout to fill the screen vertically and horizontally */
-
-  
   justify-content: center;
   align-items: center;
 
@@ -34,6 +26,9 @@
 }
 
 /* Ensure your main login wrapper doesn't break the parent background height */
+/* ======Login body finished=============================== */
+
+/* =======================logo started=============== */
 
 .login-logo {
   width: 70px;   
@@ -48,29 +43,30 @@ margin-top: 1rem;
   filter: drop-shadow(0 0 15px rgba(197, 168, 128, 0.2));
 }
 
+/* =======================logo finished=============== */
 
+/* =====================error started============ */
 .error{
 
   position: relative;
   left: 36rem;
   top: 1rem;
-
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
-  
   /* Premium Reds (Pick one) */
   color: #E53E3E; /* Modern, clean red */
   /* color: #FF6B6B; /* Better choice if your app has a dark background */
 }
+/* =====================error finished============ */
 
+/* =================================heading started================================ */
  .premium-heading {
   font-size: 4.6rem;
   margin-top: 1rem;
   font-weight: 800;
   left: -1rem;
-  
   color:#e2c211;
   text-align: center;
   letter-spacing: -0.05em;
@@ -114,8 +110,10 @@ margin-top: 1rem;
   }
 }
 
+/* =================================heading finished================================ */
 
 
+/* ===============name input started=========================== */
 .dark-premium-input {
     width: 300px;
     margin-left: 35rem;
@@ -144,8 +142,10 @@ margin-top: 1rem;
     box-shadow: 0 0 15px rgba(212, 175, 55, 0.2), 
                 inset 0 0 5px rgba(212, 175, 55, 0.1);
 }
+/* ===============name input finished=========================== */
 
 
+/* ================ password  input started=========================== */
 .dark-premium-input2 {
     width: 300px;
      margin-left: 35rem;
@@ -176,10 +176,12 @@ margin-top: 1rem;
 }
 
 
+/* ===========================password input finished----------------------- */
 
 
 
 
+/* ===+++++++++++++++++login btn started======================= */
 .login-btn {
   /* Layout & Sizing */
   display: inline-flex;
@@ -240,33 +242,12 @@ margin-top: 1rem;
   box-shadow: none;
 }
 
+/* ===+++++++++++++++++login btn finished======================= */
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* =======================for big screen phone started======================= */
 
 @media (max-width: 560px){
  
@@ -309,18 +290,17 @@ margin-top: 1rem;
 
 }
 
+/* =======================for big screen phone finished======================= */
 
-
-
+/* =======================for small screen phone started======================= */
 
 @media (max-width: 400px){
 
 
   .Login-Body{
     overflow-x: hidden;
-    overflow-y: hidden;
+   
   }
-
 
 .login-logo {
   left: 10rem;
@@ -359,4 +339,4 @@ margin-top: 1rem;
 
 
 
-
+/* =======================for small screen phone finished======================= */
