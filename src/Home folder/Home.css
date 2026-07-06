@@ -332,6 +332,10 @@ position: absolute;
     position: absolute;
     margin-top: -2.5rem;
 }
+
+body,html{
+     overflow-x: hidden;
+}
 }
 
 
