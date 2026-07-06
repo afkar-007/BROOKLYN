@@ -40,7 +40,7 @@
         /* Adjust the size to fit your design */
         left:28rem;
   height: auto;
-margin-top: 0.3rem;
+margin-top: 1rem;
   display: flex;
   position: absolute;
   
@@ -50,10 +50,19 @@ margin-top: 0.3rem;
 
 
 .error{
-  color: aliceblue;
+
   position: relative;
   left: 36rem;
-  top: 2rem;
+  top: 1rem;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  
+  /* Premium Reds (Pick one) */
+  color: #E53E3E; /* Modern, clean red */
+  /* color: #FF6B6B; /* Better choice if your app has a dark background */
 }
 
  .premium-heading {
@@ -107,13 +116,129 @@ margin-top: 0.3rem;
 
 
 
+.dark-premium-input {
+    width: 300px;
+    margin-left: 35rem;
+    margin-top: 5rem;
+    padding: 14px 20px;
+    font-size: 15px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dark-premium-input::placeholder {
+    color: #666;
+}
+
+/* Premium glow active state */
+.dark-premium-input:focus {
+    border-color: #D4AF37;
+    background-color: #222;
+    /* Soft gold glow drop shadow */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2), 
+                inset 0 0 5px rgba(212, 175, 55, 0.1);
+}
+
+
+.dark-premium-input2 {
+    width: 300px;
+     margin-left: 35rem;
+     margin-top: 2rem;
+    padding: 14px 20px;
+    font-size: 15px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dark-premium-input2::placeholder {
+    color: #666;
+}
+
+/* Premium glow active state */
+.dark-premium-input2:focus {
+    border-color: #D4AF37;
+    background-color: #222;
+    /* Soft gold glow drop shadow */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2), 
+                inset 0 0 5px rgba(212, 175, 55, 0.1);
+}
 
 
 
 
 
 
+.login-btn {
+  /* Layout & Sizing */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  padding: 14px 28px;
+  margin-left: 38rem;
+  margin-top: 2rem;
+  width: 15rem;
+  
+  /* Typography */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  
+  /* Premium Dark Styling */
+  color: #FFFFFF;
+  background: #111111; 
+  border: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold border border */
+  border-radius: 8px;
+  cursor: pointer;
+  
+  /* Smooth Transition for the Premium Feel */
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+/* Premium Hover State */
+.login-btn:hover {
+  color: #111111; /* Text flips dark to contrast with the gold */
+  
+  /* Rich Gold Gradient Background */
+  background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 50%, #B38728 100%);
+  border-color: transparent;
+  
+  /* Elegant Lift & Glow */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(179, 135, 40, 0.3);
+}
+
+/* Active Press State */
+.login-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(179, 135, 40, 0.2);
+}
+
+/* Disabled State (e.g., while loading) */
+.login-btn:disabled {
+  background: #2A2A2A;
+  color: #666666;
+  border-color: #333333;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
 
 
 
@@ -147,8 +272,10 @@ margin-top: 0.3rem;
  
 .login-logo {
   left: 3rem;
+  top: 1.3rem;
   width: 40px;
   height: 40px;
+  margin-top: 0.3rem;
 }
 .premium-heading{
   margin-left: 3rem;
@@ -156,19 +283,68 @@ margin-top: 0.3rem;
   margin-top: 1.4rem;
 
 }
+.dark-premium-input{
+  margin-left: 4rem;
+  margin-top: 4rem;
+  width: 15rem;
+  
+}.dark-premium-input2{
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 15rem;
+  
 }
+.error{
+  color: rgb(255, 3, 3);
+  position: relative;
+  left: 5rem;
+  top: 1rem;
+}
+.login-btn {
+
+  width: 10rem;
+ margin-top: 1rem;
+ margin-left: 7.5rem;
+}
+
+}
+
+
+
+
+
 @media (max-width: 374px){
 .login-logo {
   left: 1.6rem;
+  top: 1.3rem;
   width: 40px;
   height: 40px;
+   margin-top: 0.5rem;
 }
 .premium-heading{
   margin-left: 3rem;
   font-size: 2.7rem;
-  margin-top: 1.3rem;
+  margin-top: 1.7rem;
 
 }
+.dark-premium-input{
+  margin-left: 2rem;
+  margin-top: 4rem;
+  width: 15rem;
+  
+}.dark-premium-input2{
+  margin-left: 2rem;
+  margin-top: 2rem;
+  width: 15rem;
+  
+}
+.login-btn {
+
+  width: 10rem;
+ margin-top: 1rem;
+ margin-left: 5.5rem;
+}
+
 }
 
 
