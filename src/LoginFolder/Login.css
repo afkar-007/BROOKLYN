@@ -110,7 +110,7 @@ body, html {
 .app-heading-premium {
   margin-left: 1rem;
   font-size: 2.5rem;
-  margin-top: 3rem;
+  margin-top: 1.2rem;
 
 }
 }
@@ -121,9 +121,9 @@ body, html {
   height: 40px;
 }
 .app-heading-premium {
-  margin-left: 1rem;
+  margin-left: 1.2rem;
   font-size: 2.5rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 
 }
 }
