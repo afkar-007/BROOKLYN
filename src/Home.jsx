@@ -19,7 +19,7 @@ function Home() {
 
   async function fetching() {
     
-    const response=await fetch("http://localhost:4000/members")
+    const response=await fetch("https://6a4a2579edfa6a2b5fd79809.mockapi.io/project")
     const data =await response.json()
     setMembers(data)
   }
@@ -44,7 +44,7 @@ function Home() {
       const Newelement={name:username,
         title:course}
 
-         await fetch("http://localhost:4000/members",{
+         await fetch("https://6a4a2579edfa6a2b5fd79809.mockapi.io/project",{
           method:"POST",
           headers: {
     "Content-Type": "application/json"
@@ -62,7 +62,7 @@ function Home() {
   }
 
 async function HandleDelete(id) {
-  await fetch(`http://localhost:4000/members/${id}`,{
+  await fetch(`https://6a4a2579edfa6a2b5fd79809.mockapi.io/project/${id}`,{
     method:"DELETE"
   })
   
@@ -89,7 +89,7 @@ if(username.length<2){
 
 
 
- await fetch(`http://localhost:4000/members/${edit}`,{
+ await fetch(`https://6a4a2579edfa6a2b5fd79809.mockapi.io/project/${edit}`,{
   method:"PUT",
      headers: {
     "Content-Type": "application/json"

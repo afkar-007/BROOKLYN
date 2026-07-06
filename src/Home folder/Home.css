@@ -282,9 +282,9 @@ position: absolute;
 
 
 
-@media (max-width: 400px){
+@media (max-width: 450px){
     .card{
-        margin-left: 2rem;
+        margin-left: 3.5rem;
         width: 15rem;
         margin-top: 1rem;
        
@@ -300,22 +300,22 @@ position: absolute;
         margin-left: 0rem;
     }
     .form-container{
-        margin-left: 0.5rem;
-        width: 17rem;
+        margin-left: 2.5rem;
+        width: 15rem;
         height: 9rem;
         margin-top: 7rem;
     }
     .input-box{
         margin-left: 0;
         margin-top: 0;
-        width: 15rem;
+        width: 12rem;
         margin-top: -1rem;
         margin-bottom: 2.5rem;
     }
 .submit-btn{
     width: 10rem;
     margin-top: -1rem;
-    margin-left: 4rem;
+    margin-left: 2.6rem;
 }
 .search{
     width: 20rem;
