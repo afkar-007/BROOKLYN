@@ -28,12 +28,12 @@ function Home() {
   async function Create(e) {
     e.preventDefault()
 
-    if(username.length<4){
-      setError("Enter a title minimum 5 characters")
+    if(username.length<3){
+      setError("Enter  Title minimum 3 characters")
       return
     }
-  if(course.length<4){
-      setError("Enter a content minimum 5 characters")
+  if(course.length<3){
+      setError("Enter  Content minimum 3 characters")
       return
     }
 
@@ -128,10 +128,10 @@ setUsername("")
 
  <form action="" className='form-container' onSubmit={(e)=>{if(edit!==null){editing(e)}else{Create(e)}}}>
   
- <input type="text" name="" id="" className='input-box' placeholder='title' value={username} onChange={(e)=>setUsername(e.target.value)} />
+ <input type="text" name="" id="" className='input-box' placeholder='Title' value={username} onChange={(e)=>setUsername(e.target.value)} />
  <br />
 <p className='error-para'>{error}</p>
- <input type="text" placeholder='content' className='input-box ' value={course}  onChange={(e)=>setCourse(e.target.value)}/>
+ <input type="text" placeholder='Content' className='input-box ' value={course}  onChange={(e)=>setCourse(e.target.value)}/>
  <br />
 <button className='submit-btn' type="submit">submit</button>
 
