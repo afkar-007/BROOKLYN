@@ -1,63 +1,11 @@
 /* ======Login  started====== */
 
 
-.app-heading-premium {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     /* Centers horizontally */
-  justify-content: center;    /* Centers vertically if container has height */
-  text-align: center;         /* Centers multi-line text alignment */
-  width: 100%;
-  padding: 0 1.5rem;          /* Prevents text from touching screen edges on mobile */
-  box-sizing: border-box;
-  font-family: 'Cormorant Garamond', 'Didot', serif;
-  font-size: clamp(2.5rem, 7vw, 4.5rem);
-  font-weight: 300;
-  letter-spacing: 0.05em;
-  color: #111111;
-  line-height: 1.1;
-  margin-top: 2rem;
- 
 
-background: linear-gradient(
-    135deg, 
-    #b39369 0%, 
-    #e6d5b8 30%, 
-    #c5a880 70%, 
-    #9a8466 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  
-  /* Makes the thin edges of the text crisp */
-  -webkit-font-smoothing: antialiased;
-  
-  /* --- THE REFRESH ANIMATION --- */
-  /* Calls the 'premiumFadeIn' animation below */
-  animation: premiumFadeIn 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
-  
-  /* Ensures it stays hidden for a split second before the smooth reveal */
-  opacity: 0; 
-  will-change: transform, opacity;
-}
 
-@keyframes premiumFadeIn {
-  0% {
-    opacity: 0;
-    /* Starts slightly lowered and scaled down for a cinematic "lifting" effect */
-    transform: translateY(20px) scale(0.99); 
-    filter: blur(4px); /* Subtly de-blurs as it enters */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: blur(0);
-  }
-}
 /* ======Login finished======== */
 
-body, html {
+.Login-Body{
   margin: 0;
   padding: 0;
   /* Prevents the page from shrinking smaller than the device glass */
@@ -92,13 +40,108 @@ body, html {
         /* Adjust the size to fit your design */
         left:28rem;
   height: auto;
-  margin-bottom: 1.5rem;
+margin-top: 0.3rem;
   display: flex;
   position: absolute;
   
   /* Optional: Adds a premium, soft gold glow effect behind the paw */
   filter: drop-shadow(0 0 15px rgba(197, 168, 128, 0.2));
 }
+
+
+.error{
+  color: aliceblue;
+  position: relative;
+  left: 36rem;
+  top: 2rem;
+}
+
+ .premium-heading {
+  font-size: 4.6rem;
+  margin-top: 1rem;
+  font-weight: 800;
+  left: -1rem;
+  
+  color:#e2c211;
+  text-align: center;
+  letter-spacing: -0.05em;
+  position: relative;
+}
+
+/* Selecting the second line to give it a premium gradient look */
+.premium-heading span:last-child {
+  background: var(--primary-glow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block; /* Pushes it to the next line */
+}
+
+.premium-heading {
+  /* 
+     Runs the animation over 6 seconds.
+     'infinite' keeps it looping in and out.
+  */
+  animation: premiumInOut 6s ease-in-out infinite;
+}
+
+/* The In and Out Animation Loop */
+@keyframes premiumInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.96);
+    filter: blur(8px);
+  }
+  /* Fades IN and stays stable from 15% to 85% */
+  15%, 85% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0px);
+  }
+  /* Fades OUT at the end of the loop */
+  100% {
+    opacity: 0;
+    transform: translateY(-30px) scale(1.04);
+    filter: blur(8px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 560px){
  
@@ -107,10 +150,10 @@ body, html {
   width: 40px;
   height: 40px;
 }
-.app-heading-premium {
-  margin-left: 1rem;
-  font-size: 2.5rem;
-  margin-top: 1.2rem;
+.premium-heading{
+  margin-left: 3rem;
+  font-size: 2.7rem;
+  margin-top: 1.4rem;
 
 }
 }
@@ -120,10 +163,10 @@ body, html {
   width: 40px;
   height: 40px;
 }
-.app-heading-premium {
-  margin-left: 1.2rem;
-  font-size: 2.5rem;
-  margin-top: 1rem;
+.premium-heading{
+  margin-left: 3rem;
+  font-size: 2.7rem;
+  margin-top: 1.3rem;
 
 }
 }
