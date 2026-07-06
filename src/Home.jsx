@@ -124,16 +124,16 @@ setUsername("")
 
     <div className='body-1'>
 
- <input type="text"  onChange={(e)=>setSearch(e.target.value)} />
+ <input type="text" className='search' placeholder='Search your Title'  onChange={(e)=>setSearch(e.target.value)} />
 
- <form action="" onSubmit={(e)=>{if(edit!==null){editing(e)}else{Create(e)}}}>
-
- <input type="text" name="" id="" placeholder='title' value={username} onChange={(e)=>setUsername(e.target.value)} />
+ <form action="" className='form-container' onSubmit={(e)=>{if(edit!==null){editing(e)}else{Create(e)}}}>
+  
+ <input type="text" name="" id="" className='input-box' placeholder='title' value={username} onChange={(e)=>setUsername(e.target.value)} />
  <br />
-<p>{error}</p>
- <input type="text" placeholder='content' value={course}  onChange={(e)=>setCourse(e.target.value)}/>
+<p className='error-para'>{error}</p>
+ <input type="text" placeholder='content' className='input-box ' value={course}  onChange={(e)=>setCourse(e.target.value)}/>
  <br />
-<button type="submit">submit</button>
+<button className='submit-btn' type="submit">submit</button>
 
 
  </form>
