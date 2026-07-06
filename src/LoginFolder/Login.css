@@ -271,25 +271,25 @@ margin-top: 1rem;
 @media (max-width: 560px){
  
 .login-logo {
-  left: 3rem;
-  top: 1.3rem;
+  left: 5rem;
+  top: 1.2rem;
   width: 40px;
   height: 40px;
   margin-top: 0.3rem;
 }
 .premium-heading{
-  margin-left: 3rem;
+  margin-left: 2rem;
   font-size: 2.7rem;
   margin-top: 1.4rem;
 
 }
 .dark-premium-input{
-  margin-left: 4rem;
+  margin-left: 7rem;
   margin-top: 4rem;
   width: 15rem;
   
 }.dark-premium-input2{
-  margin-left: 4rem;
+  margin-left: 7rem;
   margin-top: 2rem;
   width: 15rem;
   
@@ -297,14 +297,14 @@ margin-top: 1rem;
 .error{
   color: rgb(255, 3, 3);
   position: relative;
-  left: 5rem;
+  left: 8rem;
   top: 1rem;
 }
 .login-btn {
 
   width: 10rem;
  margin-top: 1rem;
- margin-left: 7.5rem;
+ margin-left: 10.5rem;
 }
 
 }
@@ -313,7 +313,7 @@ margin-top: 1rem;
 
 
 
-@media (max-width: 390px){
+@media (max-width: 400px){
 
 
   .Login-Body{
@@ -322,22 +322,23 @@ margin-top: 1rem;
 
 
 .login-logo {
-  left: 1.6rem;
-  top: 1.3rem;
+  left: 10rem;
+  top: 6rem;
   width: 40px;
   height: 40px;
    margin-top: 0.5rem;
 }
 .premium-heading{
-  margin-left: 3rem;
+  margin-left: 1.5rem;
   font-size: 2.7rem;
   margin-top: 1.7rem;
+  font-size: 4rem;
 
 }
 .dark-premium-input{
   margin-left: 4rem;
-  
-  margin-top: 4rem;
+ 
+  margin-top: 6rem;
   width: 13rem;
   
 }.dark-premium-input2{
