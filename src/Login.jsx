@@ -16,10 +16,10 @@ const userPass="3547"
 useEffect(()=>{
 const status =localStorage.getItem("isloggedin")
 
-if(status===true)
-  {
+if(status==="true")
+{
   Navigate('/home')
-  }
+}
 
 },[])
 
