@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './Home folder/Home.css'
-
+import { useNavigate } from 'react-router-dom';
 function Home() {
-
+const Navigate=useNavigate()
 
   const[members,setMembers]=useState([])
   const[edit,setEdit]=useState(null)
@@ -110,6 +110,11 @@ setUsername("")
 }
 
 
+function Logout(){
+  localStorage.removeItem("isloggedin")
+  Navigate('/')
+}
+
 
 
 
@@ -125,6 +130,7 @@ setUsername("")
     <div className='body-1'>
 
  <input type="text" className='search' placeholder='Search your Title'  onChange={(e)=>setSearch(e.target.value)} />
+ <button className='submit-btn' onClick={Logout}>Logout</button>
 
  <form action="" className='form-container' onSubmit={(e)=>{if(edit!==null){editing(e)}else{Create(e)}}}>
   
@@ -134,6 +140,7 @@ setUsername("")
  <input type="text" placeholder='Content' className='input-box ' value={course}  onChange={(e)=>setCourse(e.target.value)}/>
  <br />
 <button className='submit-btn' type="submit">submit</button>
+
 
 
  </form>
