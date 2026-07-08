@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './LoginFolder/Login.css';
 import Pawimage from './assets/LoginPawImg.png'
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,16 @@ const [error,setError]       =   useState("")
  
 const userPass="3547"
 
+useEffect(()=>{
+const status =localStorage.getItem("isloggedin")
+
+if(status===true)
+  {
+  Navigate('/home')
+  }
+
+},[])
+
 
 function Login(e){
 e.preventDefault()
@@ -24,6 +34,7 @@ if(name.length<3){
 
 if(password===userPass){
   setError("")
+  localStorage.setItem("isloggedin","true")
   Navigate('/home')
   return
 }
